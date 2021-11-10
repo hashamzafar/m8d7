@@ -14,6 +14,9 @@ describe("Testing the testing environment", () => {
     })
 })
 describe("Testing the server", () => {
+    it("should test that true is true", () => {
+        expect(true).toBe(true);
+    })
     beforeAll(done => {
         mongoose.connect(process.env.MONGO_URL)
             .then(() => {

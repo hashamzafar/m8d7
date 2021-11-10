@@ -10,7 +10,7 @@ mongoose.connect(mongoUrl, {
     console.log("🍀 Connected to MongoDB")
     app.listen(port, () => {
         console.log("🤘 Server listening on port " + port)
-        console.log(list(app))
+        console.table(list(app))
     })
 })
 
